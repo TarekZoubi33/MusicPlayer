@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.7">
+
+            <TextView
+                android:id="@+id/track_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="TextView"
+                android:textSize="@dimen/textsize_trackTitle" />
+
+            <TextView
+                android:id="@+id/track_artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textSize="@dimen/textsize_track_artistName" />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_weight="0.2"
+        android:gravity="center_vertical|center"
+        android:text="00:00"
+        android:textSize="@dimen/textsize_track_artistName" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.1"
+        app:srcCompat="@drawable/ic_more_vert" />
+
+</LinearLayout>
+
